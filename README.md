@@ -1,2 +1,3 @@
 # martinatan.github.io
-martina's trying out pages
+
+This is going to be the website for Martina Laurel Tan.
