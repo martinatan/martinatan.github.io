@@ -5,27 +5,31 @@
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 		</head>
+
+
+
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">01. intro</a></li>
-		        	<li><a href="/about">02. about</a></li>
-	        		<li><a href="/projects">03. projects</a></li>
-	        		<li><a href="/contact">04. contact</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-				<!--
-	    		<ul>
-	        		<li><a href="mailto:martina.tan@tufts.edu">email</a></li>
-	        		<li><a href="https://linkedin.com/in/martinalaureltan">linkedin</a></li>
-				</ul>
-				-->
-			</footer>
+				<header class="page-header">
+					<nav>
+			    		<ul>
+			        		<li><a href="/">01. intro</a></li>
+				        	<li><a href="/about">02. about</a></li>
+			        		<li><a href="/projects">03. projects</a></li>
+			        		<li><a href="/contact">04. contact</a></li>
+			    		</ul>
+					</nav>
+				</header>
+
+				<div class="container">
+				
+				{{ content }}
+				
+				</div><!-- /.container -->
+				<footer class="page-footer">
+		    		<ul>
+		        		<li><a href="mailto:martina.tan@tufts.edu">email</a></li>
+		        		<li><a href="https://linkedin.com/in/martinalaureltan">linkedin</a></li>
+					</ul>
+				</footer>
 		</body>
 	</html>
