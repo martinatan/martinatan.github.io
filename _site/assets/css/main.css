@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: #ffffff;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -14,19 +15,21 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #20B2AA;
 }
 a:hover {
     text-decoration: underline;
+    color: #4A6967;
 }
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: #262626;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #595959;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -41,3 +44,4 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
