@@ -25,11 +25,11 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family: 'Raleway', 'Serif';
+    font-family: 'Raleway', 'Garamond', 'Serif';
     color: #262626;
 }
 p {
-    font-family: 'Barlow Semi Condensed', 'Sans-Serif';
+    font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.75em;
     line-height: 1.4em;
     color: #515B5A;
