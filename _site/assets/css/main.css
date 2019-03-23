@@ -17,33 +17,33 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #20B2AA;
+    color: #A83B64;
 }
 a:hover {
     text-decoration: underline;
-    color: #4A6967;
+    color: #8C445F;
 }
 h1 {
     font-size: 3em;
-    font-family: 'Raleway', 'Serif';
-    color: #262626;
+    font-family: 'Raleway', 'Garamond', 'Serif';
+    color: #491327;
 }
 p {
-    font-family: 'Barlow Semi Condensed', 'Sans-Serif';
+    font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.75em;
     line-height: 1.4em;
-    color: #515B5A;
+    color: #7F5063;
 }
 li {
     font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.5em;
-    color: #515B5A;
+    color: #7F5063;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #E1CBD4;
     font-size: .8em;
     font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
-    color: #999999;
+    color: #E1CBD4;
     text-align: right;
     padding-right: 20px;
     padding-top: 5px;
