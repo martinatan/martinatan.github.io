@@ -2,16 +2,18 @@ body {
     margin: 60px auto;
     width: 70%;
     background-color: #ffffff;
+    font-size: 100%;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+nav ul li, footer ul li { 
     display: inline;
     margin-right: 20px;
+    font-size: 1em;
 }
 a {
     text-decoration: none;
@@ -23,17 +25,28 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Raleway', 'Garamond', 'Serif';
     color: #262626;
 }
 p {
-    font-size: 1.5em;
+    font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.75em;
     line-height: 1.4em;
-    color: #595959;
+    color: #515B5A;
+}
+li {
+    font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.5em;
+    color: #515B5A;
 }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #999999;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 5px;
 }
 
 ul.posts { 
