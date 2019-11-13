@@ -1,14 +1,13 @@
 .column {
-  float: right;
-  padding: 10px;
+
 }
 
 .column.side {
-  width: 45%;
+
 }
 
 .column.main {
-  width: 50%;
+
 }
 
 /* Clear floats after the columns */
