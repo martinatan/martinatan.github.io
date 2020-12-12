@@ -76,11 +76,11 @@ p.blurb {
     font-size:1.7em;
     font-weight:bold;
     padding-bottom:0.2em;
-    text-align:justify;
+    text-align:left;
 }
 p.indent {
     text-indent:35px;
-    text-align:justify;
+    text-align:left;
 }
 li {
     font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
