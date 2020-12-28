@@ -44,7 +44,11 @@ div.desc {
   font-size: 1em;
   line-height: 1.0em;
   color: #7F5063;
-}s
+}
+
+.narrow-display {
+  	display: none;
+}
 
 @media screen and (max-width: 1400px) {
 	div.text-column {
@@ -61,6 +65,13 @@ div.desc {
 @media screen and (max-width: 800px) {
   div.img-column, div.text-column {
   	width:100%;
+  }
+  .wide-display {
+  	display: none;
+  }
+  .narrow-display {
+  	display: block;
+  	text-align: center;
   }
   img {
   	width: 80%;
@@ -88,7 +99,7 @@ div.desc {
 		<h1>design process</h1>
 
 		<div class="section">
-			<h2>writing</h2>
+			<h2 class="narrow-display">writing</h2>
 			
 			<div class="img-column">
 					<center>
@@ -98,14 +109,16 @@ div.desc {
 			</div>
 
 			<div class="text-column">
+				<h2 class="wide-display">writing</h2>
 				<p>I like to organize new information on paper as soon as possible, so I take notes at virtually every meeting or lecture I'm present for. Writing out what I'm feeling helps me check in with my instincts and start the process of making informed decisions about the project.
 				</p>
 			</div>
 		</div>
 
 		<div class="section">
-			<h2>researching</h2>
+			<h2 class="narrow-display">researching</h2>
 			<div class="text-column">
+				<h2 class="wide-display">researching</h2>
 				<p>I often follow up on meetings or initial prompts with more questions for my collaborators. It reassures me that I am getting to know my client and clarifying the problem before I trek too far down a wrong path. Research, especially in the form of learning others' perspectivess, is an important consideration for first drafts and beyond.
 				</p>
 			</div>
@@ -120,7 +133,7 @@ div.desc {
 
 
 		<div class="section">
-			<h2>sketching</h2>			
+			<h2 class="narrow-display">sketching</h2>			
 			<div class="img-column">
 				<center>
 					<a href="/assets/images/WiTsketches.png"><img src="/assets/images/WiTsketches_thumb.png" alt="Sketches from WIT branding" class="responsive"></a>
@@ -129,7 +142,7 @@ div.desc {
 			</div>
 
 			<div class="text-column">
-
+				<h2 class="wide-display">sketching</h2>
 				<p>My sketching starts as early as the first meeting with a client or a team. When designing a logo, I fill pages of my sketchbook with instinctive ideas and modifications. I adore sketching with teammates, too, using the quick-and-dirty language of wireframing to communicate user-flow schematics. Drawing was my first love, and it is still efficient for visualizing my thoughts before I proceed with using digital software tools.
 				</p>
 			</div>
@@ -137,8 +150,9 @@ div.desc {
 
 
 		<div class="section">
-			<h2>implementing and iterating</h2>
+			<h2 class="narrow-display">implementing and iterating</h2>
 			<div class="text-column">
+				<h2 class="wide-display">implementing and iterating</h2>
 				<p>I use Sketch and Adobe XD, Illustrator, and Photoshop to create vector-based graphics, and Figma to collaborate on interactive prototypes that are then referenced to build the functional platform. I greatly enjoy that the design process is so open-ended, allowing me to switch between absorbing and reacting to new info as the project calls for it.
 				</p>
 			</div>
