@@ -1,13 +1,25 @@
-.column {
-
+* {
+  box-sizing: border-box;
 }
 
-.column.side {
-
+div {
+  display: block;
 }
 
-.column.main {
+.column-side {
+  float:left;
+  /*padding:10px 25px 10px 25px;*/
+  width: 40%;
+}
 
+.column-main {
+  float:left;
+  /*padding-top: 10px;*/
+  width: 60%;
+}
+
+.column-main p {
+  padding: 0px 40px 0px 40px;
 }
 
 /* Clear floats after the columns */
@@ -28,14 +40,37 @@ body {
     margin: 60px auto;
     padding: 0;
     height: 100%;
-    width: 70%;
+    width: 75%;
     background-color: #ffffff;
     font-size: 100%;
 
-    display: flex;
-    flex-direction: column;
-
+/*    display: flex;
+    flex-direction: column;*/
 }
+
+@media screen and (max-width: 900px) {
+  body {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    width: 85%;
+    font-size: 125%;
+  }
+  .column-side, .column-main {
+    width:100%;
+  }
+  .column-side {
+
+  }
+
+  .column-side img {
+    width:80%;
+  }
+}
+
 nav ul, footer ul {
     font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -45,7 +80,7 @@ nav ul, footer ul {
 nav ul li, footer ul li { 
     display: inline;
     margin-right: 20px;
-    font-size: 1em;
+    font-size: 1.35em;
 }
 a {
     text-decoration: underline;

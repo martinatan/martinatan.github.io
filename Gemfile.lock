@@ -69,6 +69,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  kramdown (>= 2.3.0)
   minima
 
 BUNDLED WITH
