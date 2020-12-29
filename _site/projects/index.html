@@ -30,17 +30,20 @@
 				<head>
 <style>
 div.gallery {
+  text-align:center;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   overflow: hidden;
+  margin:auto;
 }
 
 div.gallery:hover {
+
 }
 
 div.gallery img {
-  width: 100%;
+  width: 80%;
   height: auto;
 
   position: absolute;
@@ -59,20 +62,26 @@ div.gallery img.portrait {
 }
 
 div.desc {
-  padding: 15px;
+  padding: 0px;
   text-align: center;
   font-family: 'Barlow Semi Condensed', 'Helvetica', 'Arial', 'Sans-Serif';
-  font-size: 1.25em;
+  font-size: 1.15em;
   line-height: 1.4em;
   color: #7F5063;
 
   margin-bottom: 0.8em;
 }
 
-* {
-  box-sizing: border-box;
+.row {
+  margin-bottom: 30px;
 }
 
+.category {
+  margin-bottom: 30px;
+}
+
+
+/*
 .responsive {
   padding: 0 6px;
   float: left;
@@ -91,12 +100,13 @@ div.desc {
     width: 100%;
   }
 }
+*/
 
-.clearfix:after {
+/*.clearfix:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 </style>
 </head>
 
@@ -107,136 +117,188 @@ div.desc {
 
 <body>
 
-<center><h2 id="expdesign">experience design</h2></center>
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/projects/scratchjr-site">
-      <img src="/assets/images/SJr_prototype.png" alt="ScratchJr Prototype Screenshot" width="600" height="400">
-    </a>
+<!-- UX DESIGN AND WEB DEV -->
+
+
+<div class="category">
+
+<center><h2 id="expdesign">experience design/web development</h2></center>
+
+<div class="row">
+
+  <div class="grid-column">
+    <div class="gallery">
+      <a href="/projects/scratchjr-site">
+        <img src="/assets/images/SJr_prototype.png" alt="ScratchJr Prototype Screenshot">
+      </a>
+    </div>
+    <div class="desc"><p><a href="/projects/scratchjr-site">ScratchJr Connect</a></p></div>
   </div>
-  <div class="desc"><a href="/projects/scratchjr-site">ScratchJr Resource Sharing Platform</a></div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/projects/hci-tems">
-      <img src="/assets/images/TEMS_thumbnail.png" alt="TEMS app home screen" width="600" height="400">
-    </a>
+  <div class="grid-column">
+    <div class="gallery">
+      <a href="/projects/hci-tems">
+        <img src="/assets/images/TEMS_thumbnail.png" alt="TEMS app home screen">
+      </a>
+    </div>
+    <div class="desc"><p><a href="/projects/hci-tems">
+      TEMS Shift Tracker
+    </a></p></div>
   </div>
-  <div class="desc"><a href="/projects/hci-tems">
-    TEMS Shift Tracker
-  </a>
-  </div>
-</div>
 
-<div class="clearfix"></div>
+</div><!--row-->
 
+</div><!--category-->
+
+
+
+
+<!-- GRAPHIC DESIGN -->
+
+
+<div class="category">
 
 <center><h2 id="graphicdesign">graphic design</h2></center>
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/projects/wit">
-      <img src="/assets/images/wit_2019.png" alt="Women in Tech logo" width="600" height="400">
-    </a>
+<div class="row">
+
+<div class="grid-column">
+    <div class="gallery">
+      <a href="/projects/wit">
+        <img src="/assets/images/wit_2019.png" alt="Women in Tech logo" width="600" height="400">
+      </a>
+    </div>
+    <div class="desc"><p><a href="/projects/wit">Women in Tech</a></p></div>
   </div>
-  <div class="desc"><a href="/projects/wit">Women in Tech</a></div>
+
+  <div class="grid-column">
+    <div class="gallery">
+      <a href="/projects/devtechgraphics">
+        <img src="/assets/images/DevTechFlyer.jpeg" alt="DevTech Flyer" width="600" height="400">
+      </a>
+    </div>
+    <div class="desc"><p><a href="/projects/devtechgraphics">DevTech Research Group</a></p></div>
+  </div>
+
+  <div class="grid-column">
+    <div class="gallery">
+      <a href="/projects/leadwithlee">
+        <img src="/assets/images/leelogo1.png" alt="Lead With Lee Logo" width="600" height="400">
+      </a>
+    </div>
+    <div class="desc"><p><a href="/projects/leadwithlee">Shannon Lee Senate Campaign</a></p></div>
+  </div>
 
 </div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/projects/devtechgraphics">
-      <img src="/assets/images/DevTechFlyer.jpeg" alt="DevTech Flyer" width="600" height="400">
-    </a>
-  </div>
-  <div class="desc"><a href="/projects/devtechgraphics">DevTech Research Group</a></div>
-</div>
+<div class="row">
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/projects/leadwithlee">
-      <img src="/assets/images/leelogo1.png" alt="Lead With Lee Logo" width="600" height="400">
-    </a>
+  <div class="grid-column">
+    <div class="gallery">
+      <a href="/projects/tbe">
+        <img src="/assets/images/TEN_logo.png" alt="Textbook Exchange logo" width="600" height="400">
+      </a>
+    </div>
+    <div class="desc"><p><a href="/projects/tbe">Tufts Textbook Exchange</a></p></div>
   </div>
-  <div class="desc"><a href="/projects/leadwithlee">Shannon Lee Senate Campaign</a></div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/projects/tbe">
-      <img src="/assets/images/TEN_logo.png" alt="Textbook Exchange logo" width="600" height="400">
-    </a>
+  <div class="grid-column">
+    <div class="gallery">
+      <a href="/projects/jumbovote">
+        <img src="/assets/images/JumboVote.png" alt="JumboVote logo" width="600" height="400">
+      </a>
+    </div>
+    <div class="desc"><p><a href="/projects/jumbovote">JumboVote</a></p></div>
   </div>
-  <div class="desc"><a href="/projects/tbe">Tufts Textbook Exchange</a></div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/projects/jumbovote">
-      <img src="/assets/images/JumboVote.png" alt="JumboVote logo" width="600" height="400">
-    </a>
+  <div class="grid-column">
+    <div class="gallery">
+      <a href="/projects/granoff">
+        <img src="/assets/images/Granoff.png" alt="Granoff All-Nighter poster">
+      </a>
+    </div>
+    <div class="desc"><p><a href="/projects/granoff">Granoff All-Nighter</a></p></div>
   </div>
-  <div class="desc"><a href="/projects/jumbovote">JumboVote</a></div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/projects/granoff">
-      <img src="/assets/images/Granoff.png" alt="Granoff All-Nighter poster">
-    </a>
-  </div>
-  <div class="desc"><a href="/projects/granoff">Granoff All-Nighter</a></div>
-</div>
+</div><!--row-->
 
-<div class="responsive">
+
+<div class="row">
+
+<div class="grid-column">
   <div class="gallery">
     <a href="/projects/applejam">
       <img src="/assets/images/ApplejamIcon.png" alt="Applejam Logo - Design Wars entry">
     </a>
   </div>
-  <div class="desc"><a href="/projects/applejam">Polyhack 2017 Design Wars</a></div>
+  <div class="desc"><p><a href="/projects/applejam">Polyhack 2017 Design Wars</a></p></div>
 </div>
 
+</div><!--row-->
 
-<div class="clearfix"></div>
+</div><!--category-->
+
+
+
+
+<!-- STUDIO ART ss-->
+
+<div class="category">
 
 <center><h2 id="studioart">studio art</h2>
     <p>this section is under construction! you can find more artwork on my <a href="https://www.instagram.com/m.art.ina.tan/">instagram</a>.</p>
 </center>
 
-<div class="responsive">
-  <div class="gallery">
-    <!--<a href="/projects/s19_painting">-->
-      <img src="/assets/images/ShowerDetail1.jpg" alt="Self Portrait After Shower (2019), detail" width="600" height="400">
-    <!--</a>-->
-  </div>
-  <div class="desc">spring 2019 painting<!--<a href="/projects/s19_painting">spring 2019 painting</a>--></div>
-</div>
+<div class="row">
 
-<div class="responsive">
-  <div class="gallery">
-    <!--<a href="/projects/f18_painting">-->
-      <img src="/assets/images/SelfPortraitSeptember.jpg" alt="Self Portrait, September (2018)" width="600" height="400">
-    <!--</a>-->
+  <div class="grid-column">
+    <div class="gallery">
+      <!--<a href="/projects/s19_painting">-->
+        <img src="/assets/images/SeniorTreesisThumbnail.png" alt="Treehugger Proposal Mockup (2020)- an image of a dead, barkless tree with a human shaped sheet of hand-drawn bark pattern drawn onto it." width="600" height="400">
+      <!--</a>-->
+    </div>
+    <div class="desc"><p>Senior Thesis 2021</p><!--<a href="/projects/s19_painting">spring 2019 painting</a>--></div>
   </div>
-  <div class="desc">fall 2018 painting<!--<a href="/projects/f18_painting">fall 2018 painting</a>--></div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <!--<a href="/projects/f18_photo">-->
+    <div class="grid-column">
+    <div class="gallery">
+      <!--<a href="/projects/s19_painting">-->
+        <img src="/assets/images/MiddleThumbnail.jpg" alt="Middle (2020), colored pencil on paper, detail" width="600" height="400">
+      <!--</a>-->
+    </div>
+    <div class="desc"><p>2020 Artwork</p><!--<a href="/projects/s19_painting">spring 2019 painting</a>--></div>
+  </div>
+
+    <div class="grid-column">
+    <div class="gallery">
+      <!--<a href="/projects/s19_painting">-->
+        <img src="/assets/images/ShowerDetail1.jpg" alt="Self Portrait After Shower (2019), detail" width="600" height="400">
+      <!--</a>-->
+    </div>
+    <div class="desc"><p>2019 Artwork</p><!--<a href="/projects/s19_painting">spring 2019 painting</a>--></div>
+  </div>
+
+</div><!--row-->
+
+<div class="row">
+
+  <div class="grid-column">
+    <div class="gallery">
+      <!--<a href="/projects/f18_photo">-->
       <img src="/assets/images/AfterLongo.jpg" alt="After Longo (2018)" width="600" height="400">
-    <!--</a>-->
+      <!--</a>-->
+    </div>
+    <div class="desc"><p>2018 and Older Artwork</p><!--<a href="/projects/s19_painting">spring 2019 painting</a>--></div>
   </div>
-  <div class="desc">fall 2018 photography<!--<a href="/projects/f18_photo">fall 2018 photography</a>--></div>
-</div>
+</div><!--row-->
 
-<div class="clearfix"></div>
+
+</div><!--category-->
+
 
 </body>
-</div>
+</div><!--projects-->
 				
 				</div><!-- /.container -->
 				<footer id="footer">

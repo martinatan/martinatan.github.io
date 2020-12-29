@@ -6,6 +6,11 @@ div {
   display: block;
 }
 
+.grid-column {
+  float:left;
+  width:33%;
+}
+
 .column-side {
   float:left;
   /*padding:10px 25px 10px 25px;*/
