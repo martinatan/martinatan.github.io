@@ -30,6 +30,38 @@
 				<head>
 <style>
 
+#ten-sketches {
+  width: 100%;
+}
+
+
+#TEN-logo, #TBE-poster, #TBE-FBcover {
+  height: 275px;
+}
+
+@media screen and (max-width: 1300px) {
+  .column-side, .column-main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #TBE-FBcover {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  #TEN-logo {
+    height: 400px;
+  }
+
+  #TBE-poster {
+    height: 550px;
+  }
+
+}
+
 div.desc {
   padding: 0.5em;
   text-align: center;
@@ -62,7 +94,7 @@ div.profile {
 
     <div class="column-side">
     	<div class="img" style="float:left; padding:0px 15px 0px 15px;">
-    		<center><a href="/assets/images/TEN_sketches.png"><img src="/assets/images/TEN_sketches.png" alt="Sketchbook pages of TEN logo ideas" width="500px"></a>
+    		<center><a href="/assets/images/TEN_sketches.png"><img src="/assets/images/TEN_sketches.png" alt="Sketchbook pages of TEN logo ideas" id="ten-sketches"></a>
     		</center>
     		<div class="desc">Sketchbook pages of logo designs (Click for full view)
     		</div>
@@ -88,7 +120,7 @@ div.profile {
     <div class="profile">
     	<div class="img">
     	<center>
-    		<img src="/assets/images/TEN_logo.png" style="padding:0px 10px 0px 10px;"height="275px"><img src="/assets/images/TBE_poster.png" style="padding:0px 10px 0px 10px;"height="275px"><img src="/assets/images/TBE_FBcover.png" style="padding:0px 10px 0px 10px;"height="275px"></center>
+    		<img src="/assets/images/TEN_logo.png" style="padding:0px 10px 0px 10px;" id="TEN-logo"><img src="/assets/images/TBE_poster.png" style="padding:0px 10px 0px 10px;"id="TBE-poster"><img src="/assets/images/TBE_FBcover.png" style="padding:0px 10px 0px 10px;" id="TBE-FBcover"></center>
     	<div class="desc">Final logo for Textbook Exchange Network; campus poster & Facebook cover to promote program hours</div>
     	</div>
 

@@ -29,6 +29,60 @@
 				
 				<head>
 <style>
+
+#jumbovote-logo {
+  width: 100%;
+}
+
+#JV-IRL1, #JV-IRL2 {
+  height: 200px;
+}
+
+@media screen and (max-width: 1160px) {
+  #JV-IRL1 {
+    height: 250px;
+  }
+
+  #JV-IRL2 {
+    height: 425px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  #jumbovote-logo {
+    width: 75%;
+  }
+
+  .column-side, .column-main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #jumbovote-logo {
+    width: 85%;
+  }
+
+  #JV-IRL1 {
+    height: 175px;
+  }
+
+  #JV-IRL2 {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #JV-IRL1 {
+    height: 125px;
+  }
+
+  #JV-IRL2 {
+    height: 225px;
+  }
+}
+
 div.section {
   padding-bottom: 1.4em;
   display:block;
@@ -63,13 +117,17 @@ div.profile {
 <body>
   <div class="section">
 
-  	<div class="img" style="float:left; padding:0px 25px 0px 25px;">
-  		<center><a href="/assets/images/JumboVote.png"><img src="/assets/images/JumboVote.png" alt="JumboVote logo" width="400px"></a>
-  		</center>
-  		<div class="desc">Final logo design (Click for full view)
-  		</div>
-  	</div>
+    <div class="column-side">
 
+    	<div class="img" style="float:left; padding:0px 25px 0px 25px;">
+    		<center><a href="/assets/images/JumboVote.png"><img src="/assets/images/JumboVote.png" alt="JumboVote logo" id="jumbovote-logo"></a>
+    		</center>
+    		<div class="desc">Final logo design (Click for full view)
+    		</div>
+    	</div>
+    </div>
+
+    <div class="column-main">
       <div class="profile">
       	<p><ul style="list-style-type:none;line-height:2.0em;text-align:center;">
       		<li><b>time range:</b>  July 2018</li>
@@ -81,11 +139,12 @@ div.profile {
       	</p>
       </div>
     </div>
+  </div>
 
   <div class="section">
     <div class="img">
     	<center>
-    		<img src="/assets/images/JV_IRL1.png" style="padding:0px 10px 0px 10px;" height="200px"><img src="/assets/images/JV_IRL2.png" style="padding:0px 10px 0px 10px;"height="200px">
+    		<img src="/assets/images/JV_IRL1.png" style="padding:0px 10px 0px 10px;" id="JV-IRL1"><img src="/assets/images/JV_IRL2.png" style="padding:0px 10px 0px 10px;" id="JV-IRL2">
     	</center>
     	<div class="desc">Buttons and stickers in action!</div>
     </div>

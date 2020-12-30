@@ -5,8 +5,46 @@ title: Martina Tan - Polyhack Design Wars
 
 <head>
 <style>
-.column-main, .column-side {
-  width: 50%;
+#aj-icon, #aj-stacked {
+  height: 250px;
+}
+
+#aj-notes1, #aj-notes2, #aj-notes3, #aj-notes4 {
+  height: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  #aj-notes1, #aj-notes2, #aj-notes3, #aj-notes4 {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .column-side, .column-main {
+    width: 100%;
+  }
+
+  #aj-icon, #aj-stacked {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #aj-notes1, #aj-notes2, #aj-notes3, #aj-notes4 {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  #aj-notes1, #aj-notes2, #aj-notes3, #aj-notes4 {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #aj-notes1, #aj-notes2, #aj-notes3, #aj-notes4 {
+    height: 175px;
+  }
 }
 
 div.section:after {
@@ -44,27 +82,28 @@ div.profile {
 
 <body>
   <div class="section">
-    <div class="column-main">
-      <div class="img" style="padding:0px 15px 0px 15px;">
+    <div class="column-side">
+      <div class="img">
         <center><a href="/assets/images/ApplejamIcon.png">
-          <img src="/assets/images/ApplejamIcon.png" alt="Applejam Icon" height="300px"></a><a href="/assets/images/ApplejamStacked.png"><img src="/assets/images/ApplejamStacked.png" alt="Applejam Stacked Logo" height="300px">
+          <img src="/assets/images/ApplejamIcon.png" alt="Applejam Icon" id="aj-icon"></a><a href="/assets/images/ApplejamStacked.png"><img src="/assets/images/ApplejamStacked.png" alt="Applejam Stacked Logo" id="aj-stacked">
         </a></center>
         <div class="desc">Final submissions: an abbreviated "AJ" icon, and a stacked version of the "Applejam" name (Click for full view)
         </div>
       </div>
     </div>
 
-    <div class="column-side">
+    <div class="column-main">
       <div class="profile">
-          <p><ul style="list-style-type:none;line-height:2.0em;text-align:center;">
-            <li><b>time range:</b>  October, 2017 (overnight design challenge)</li>
-            <li><b>client:</b>  <a href="https://www.facebook.com/ApplejamProductions">Applejam Productions</a></li>
-            <li><b>tools:</b> pen and paper, FireAlpaca</li>
-          </ul></p>
+        <p><ul style="list-style-type:none;line-height:2.0em;text-align:center;">
+          <li><b>time range:</b>  October, 2017 (overnight design challenge)</li>
+          <li><b>client:</b>  <a href="https://www.facebook.com/ApplejamProductions">Applejam Productions</a></li>
+          <li><b>tools:</b> pen and paper, FireAlpaca</li>
+        </ul></p>
 
-      <p class="indent">Since I was allotted only a few hours for this challenge, I relied a lot on instinct to come up with branding that I felt suited the personalities that Applejam Productions invites. I spent some time brainstorming style references, such as Summer of Love posters from the 60s and street art movements. In my sketches, I drew inspiration from psychedelic fonts, which were historically used to fill space in interesting ways rather than to be legible.</p>
+        <p class="indent">Since I was allotted only a few hours for this challenge, I relied a lot on instinct to come up with branding that I felt suited the personalities that Applejam Productions invites. I spent some time brainstorming style references, such as Summer of Love posters from the 60s and street art movements. In my sketches, I drew inspiration from psychedelic fonts, which were historically used to fill space in interesting ways rather than to be legible.</p>
 
-      <p>In my final digital designs, I used eye-catching colors and anthrompomorphized the text to convey both the high energy of Applejam's live shows with the handmade, eccentric quality of club's public image. My entry into this design challenge won me a license for Sketch, which I went on to use in later hackathons.</p>
+        <p>In my final digital designs, I used eye-catching colors and anthrompomorphized the text to convey both the high energy of Applejam's live shows with the handmade, eccentric quality of club's public image. My entry into this design challenge won me a license for Sketch, which I went on to use in later hackathons.</p>
+      </div>
     </div>
   </div>
 
@@ -72,7 +111,7 @@ div.profile {
   <div class="section">
     <div class="img">
         <center>
-          <a href="/assets/images/ApplejamNotes1.jpg"><img src="/assets/images/ApplejamNotes1.jpg" style="padding:0px 10px 0px 10px;" alt="Applejam logo notes and sketches" height="420px"></a><a href="/assets/images/ApplejamNotes2.jpg"><img src="/assets/images/ApplejamNotes2.jpg" style="padding:0px 10px 0px 10px;" alt="Applejam logo sketches" height="420px"></a><a href="/assets/images/ApplejamNote3.jpg"><img src="/assets/images/ApplejamNotes3.jpg" style="padding:0px 10px 0px 10px;" alt="Applejam logo notes and sketches" height="420px"></a><a href="/assets/images/ApplejamNotes4.jpg"><img src="/assets/images/ApplejamNotes4.jpg" style="padding:0px 10px 0px 10px;" alt="Applejam logo notes and sketches" height="420px"></a>
+          <a href="/assets/images/ApplejamNotes1.jpg"><img src="/assets/images/ApplejamNotes1.jpg" style="padding:0px 10px 0px 10px;" alt="Applejam logo notes and sketches" id="aj-notes1"></a><a href="/assets/images/ApplejamNotes2.jpg"><img src="/assets/images/ApplejamNotes2.jpg" style="padding:0px 10px 0px 10px;" alt="Applejam logo sketches" id="aj-notes2"></a><a href="/assets/images/ApplejamNote3.jpg"><img src="/assets/images/ApplejamNotes3.jpg" style="padding:0px 10px 0px 10px;" alt="Applejam logo notes and sketches" id="aj-notes3"></a><a href="/assets/images/ApplejamNotes4.jpg"><img src="/assets/images/ApplejamNotes4.jpg" style="padding:0px 10px 0px 10px;" alt="Applejam logo notes and sketches" id="aj-notes4"></a>
         </center>
         <div class="desc">Notes and sketches from the ideation process (Click for full view)</div>
     </div>

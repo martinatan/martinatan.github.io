@@ -8,10 +8,50 @@ title: Martina Tan - projects
 div.gallery {
   text-align:center;
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 325px;
+  height: 325px;
   overflow: hidden;
   margin:auto;
+}
+
+@media screen and (max-width: 1350px) {
+  div.gallery {
+    width: 275px;
+    height: 275px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  div.gallery {
+    width: 225px;
+    height: 225px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  div.gallery {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.grid-column {
+    width: 100%;
+  }
+
+  div.gallery {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  div.gallery {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 div.gallery:hover {
