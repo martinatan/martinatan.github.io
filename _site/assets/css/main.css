@@ -24,11 +24,22 @@ div {
 }
 
 .column-main p {
-  padding: 0px 40px 0px 40px;
+  padding: 0px 15px 0px 15px;
 }
 
 /* Clear floats after the columns */
 .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.section {
+  padding-bottom: 1.4em;
+  display:block;
+}
+
+div.section:after {
   content: "";
   display: table;
   clear: both;
