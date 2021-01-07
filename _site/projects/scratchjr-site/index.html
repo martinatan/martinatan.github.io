@@ -30,6 +30,19 @@
 				<head>
 <style>
 
+#prototype-vid {
+  width: 636px;
+  height: 358px;
+}
+
+#figma-v1 {
+  width: 100%;
+}
+
+#sketches1, #sketches2 {
+  width: 50%;
+}
+
 div.desc {
   padding: 0.5em;
   text-align: center;
@@ -57,31 +70,63 @@ div.profile {
 
 <body>
   <div class="section">
+    <div class="column-main">
+    <center><iframe id="prototype-vid" src="https://www.youtube-nocookie.com/embed/Qzpz2l4ZpY8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    </div>
 
-<center><iframe width="848" height="477" src="https://www.youtube-nocookie.com/embed/Qzpz2l4ZpY8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+    <div class="column-side">
+    <p><ul style="list-style-type:none;line-height:2.0em;">
+      <li><b>time range:</b>  September 2019-present</li>
+      <li><b>client:</b>  DevTech Research Group</li>
+      <li><b>tools:</b>  Wordpress Plugins and Themes, Pen & Paper, Figma, Git, HTML/CSS, Javascript, PHP</li>
+      <li><b>my role:</b> Project Manager, User Experience/Interface (UX/UI) Designer, Web Developer</li>
+      <li><b>team members:</b> Emil Polackiewicz, Matthew Fiedler (past members: Devon Minor, Kaavya Chaparala, Albert Tseng, Wei-ren Murray, Tom Ribeiro, Aim Unahalekhaka)</li>
+    </ul></p>
+    </div>
   </div>
 
+  <div class="profile">
+  	<p class="indent">Our goal is to create a functional website that allows users to submit resources pertaining to ScratchJr, which is a tablet-based application for children ages 4-7 years old to learn to program while exercising their creativity and making fun character animations. The website needs to be scalable to serve possibly millions of educators who teach using ScratchJr in their classrooms or at home.</p>
+  </div>
 
-	<div class="img" style="float:left; padding:0px 50px 0px 0px;">
-		<center><a href="/assets/images/SJr_homepage.png"><img src="/assets/images/SJr_homepage.png" alt="ScratchJr Connect home page" width="350px"></a>
-		</center>
-		<div class="desc">Mid-fidelity prototype of the home page (Click for full view)
-		</div>
-	</div>
+<div class="section">
 
-    <div class="profile">
-    	<p><ul style="list-style-type:none;line-height:2.0em;text-align:center;">
-    		<li><b>time range:</b>  September 2019-present</li>
-    		<li><b>client:</b>  DevTech Research Group</li>
-    		<li><b>tools:</b>  Wordpress Plugins and Themes, Pen & Paper, Figma, Git, HTML/CSS, Javascript, PHP</li>
-    		<li><b>team members:</b> Emil Polackiewicz, Matthew Fiedler (past members: Devon Minor, Kaavya Chaparala, Albert Tseng, Wei-ren Murray, Tom Ribeiro, Aim Unahalekhaka)</li>
-    	</ul></p>
-    	<p class="indent">Our goal is to create a functional website that allows users to submit resources pertaining to ScratchJr, which is a tablet-based application for children ages 4-7 years old to learn to program while exercising their creativity and making fun character animations.</p>
+  <div class="column-side">
+    <center><a href="/assets/images/SJrConnect-FigmaV1.png"><img src="/assets/images/SJrConnect-FigmaV1-thumb.png" alt="Initial Figma sketches of ScratchJr Connect UI" id="figma-v1"></a>
+    </center>
+    <div class="desc">Fall 2019, some of the very first set of UI designs I created with Tom Ribeiro. (Click for full view)
+    </div>
+  </div>
 
-    	<p>Our work so far has consisted of two broad tasks: conceptualizing a website structure that would make sense to users, and assessing what capabilities Wordpress has to realize this website structure. Since we are picking up on previous research that past students at DevTech have provided us, we have started by building a medium-fidelity prototype in Figma and testing it with teachers who use ScratchJr and would therefore want to use this website.</p>
+  <div class="column-main">
+      <p>I started on this project with Tom Ribeiro and Apittha Unahalekhaka, picking up on research about the resource tagging system by past students at DevTech. We devised a user interface prototype in Figma, and I created a scripted study procedure that allowed us to test use case scenarios on educators who were familiar with ScratchJr. The sessions we held with target audience members allowed us to better align our design with users' mental models by simplifying the home page, submission process, and resource tagging system. We have also tested the website design and functionality with members of our lab multiple times throughout the project.</p>
 
-    	<p>Now, we are using our Figma prototype and our user feedback to begin implementing site features in Wordpress using plugins such as Formidable Forms and Custom Post Types UI. Since we are a small team, it has been a huge challenge to juggle these roles that would normally be delegated to more people. At the same time, it has been an intense yet rewarding experience to learn the ins and outs of the experience design & research process.</p>
+      <p>We simultaneously had to research customization tools on Wordpress that could best translate the elements of our task and feature analysis into reality. We originally attempted to create the website without coding, but this became impossible as our development needs were too sophisticated for the limited customizability of out-of-the-box plugins.</p>
+  </div>
+
+</div>
+
+<div class="section">
+
+    <center><a href="/assets/images/SJrConnect-Sketches1.png"><img src="/assets/images/SJrConnect-Sketches1.png" alt="Pen and paper sketches of ScratchJr Connect Resource Thumbnail and Detail Views" id="sketches1"></a><a href="/assets/images/SJrConnect-Sketches2.png"><img src="/assets/images/SJrConnect-Sketches2.png" alt="Pen and paper sketches of ScratchJr Connect Resource Home, Submit, Discover, and User pages" id="sketches2"></a>
+    </center>
+    <div class="desc">May 2020, sketches of crucial page designs made more specific. (Click for full view)
+    </div>
+
+</div>
+
+
+
+      <div>
+
+
+      <p>I became project lead in January 2020 and concluded that our team would need dedicated programmers to code a custom Wordpress theme for the site using PHP, HTML, CSS, and Javascript. Working with student interns of varied coding backgrounds, and being unfamiliar myself with the Tufts development environment, we spent the spring learning from Tufts Technology Support staff.</p>
+
+      <p>In parallel with this programming journey, I realized that our UI designs would need to be more specific in order to serve as references for our developers. Since Tom had left the team, I took responsibility for revising key aspects of the website, first as paper sketches and then in Figma. These in-depth sketches I created throughout May and June helped me discuss my ideas and technical challenges with both the members of my team and the lab director.</p>
+
+      <p>Much of development prioritized pinning down the functionality of basic features in code over fine-tuning design choices, and we continually ran into bugs due to the complex code and environment. Due to the pandemic, unexpected fatal errors, and delays in communication with support teams, our finished product's deadline was pushed back throughout 2020. We now have a finished, live version of the site that we will beta test with our target audience this month and hopefully make public this spring.</p>
+
     </div>
 
         <div class="bumper" style="padding-top:50px;"><center>
