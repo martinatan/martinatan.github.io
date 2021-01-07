@@ -2,7 +2,7 @@
 	<html lang="en">
 		<head>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Martina Tan - ScratchJr Resource Platform</title>
+			<title>Martina Tan - ScratchJr Connect</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed">
@@ -39,8 +39,69 @@
   width: 100%;
 }
 
+#figma-v2 {
+  width: 100%;
+}
+
 #sketches1, #sketches2 {
   width: 50%;
+}
+
+#finals1, #finals2 {
+  width: 50%;
+}
+
+#cbs-slides {
+  width: 960px;
+  height: 598px;
+}
+
+@media screen and (max-width: 1350px) {
+  #prototype-vid {
+    width: 509px;
+    height: 286px;
+  }
+
+  #cbs-slides {
+    width: 840px;
+    height: 524px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #prototype-vid {
+    width: 600px;
+    height: 337px;
+  }
+
+  .column-main, .column-side {
+    width: 100%;
+  }
+
+  #sketches1, #sketches2 {
+    width: 100%;
+  }
+
+  #finals1, #finals2 {
+    width: 100%;
+  }
+
+  #cbs-slides {
+    width: 600px;
+    height: 374px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #prototype-vid {
+    width: 400px;
+    height: 225px;
+  }
+
+  #cbs-slides {
+    width: 400px;
+    height: 250px;
+  }
 }
 
 div.desc {
@@ -64,7 +125,7 @@ div.profile {
     		newest&nbsp; &nbsp; |&nbsp; &nbsp; <a href="/projects/#expdesign">experience design</a>&nbsp; &nbsp; |&nbsp; &nbsp; <a href="/projects/hci-tems/">older >></a>
     	</p>
     </center></div>
- <h1 style="padding-top:15px"><center>ScratchJr Resource Platform</center></h1>
+ <h1 style="padding-top:15px"><center>ScratchJr Connect</center></h1>
    	  <p class="blurb">I am the project manager of a small team at <a href="https://sites.tufts.edu/devtech/">DevTech Research Group</a> working to design and build a Wordpress site for educators and parents to share resources related to <a href="https://www.scratchjr.org/">ScratchJr</a>. View the beta site live at <a href="https://scratchjrconnect.tufts.edu/">scratchjrconnect.tufts.edu/</a>.</p>
 
 
@@ -73,6 +134,7 @@ div.profile {
     <div class="column-main">
     <center><iframe id="prototype-vid" src="https://www.youtube-nocookie.com/embed/Qzpz2l4ZpY8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </center>
+    <div class="desc">This video walks through three versions of our site design, from the original Figma prototype to the final live site on Wordpress.</div>
     </div>
 
     <div class="column-side">
@@ -100,12 +162,21 @@ div.profile {
   </div>
 
   <div class="column-main">
-      <p>I started on this project with Tom Ribeiro and Apittha Unahalekhaka, picking up on research about the resource tagging system by past students at DevTech. We devised a user interface prototype in Figma, and I created a scripted study procedure that allowed us to test use case scenarios on educators who were familiar with ScratchJr. The sessions we held with target audience members allowed us to better align our design with users' mental models by simplifying the home page, submission process, and resource tagging system. We have also tested the website design and functionality with members of our lab multiple times throughout the project.</p>
+      <p>I started on this project with Tom Ribeiro and Apittha Unahalekhaka, picking up on research about the resource tagging system by past students at DevTech. We devised a user interface prototype in Figma, and I created a scripted study procedure (<a href="https://docs.google.com/document/d/1W-hempOurvmkaHfvTdZJ-DU_GQyHIN4aHIbkJAi_eLo/edit?usp=sharing">view script in Google Drive</a>) that allowed us to test use case scenarios on educators who were familiar with ScratchJr. The sessions we held with target audience members allowed us to better align our design with users' mental models by simplifying the home page, submission process, and resource tagging system. We have also tested the website design and functionality with members of our lab multiple times throughout the project.</p>
 
       <p>We simultaneously had to research customization tools on Wordpress that could best translate the elements of our task and feature analysis into reality. We originally attempted to create the website without coding, but this became impossible as our development needs were too sophisticated for the limited customizability of out-of-the-box plugins.</p>
   </div>
 
 </div>
+
+<div class="section">
+  <center><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR7gNfdAkUBdM7xqSIwB8R-BlggvLEwHo2miW6Av1ErpD_RrCTFd_ea8KieNvWL7KbkNAA21ObVW64n/embed?start=false&loop=true&delayms=5000" frameborder="0" id="cbs-slides" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></center>
+
+  <div class="desc">February-April 2020, poster and slides from my presentation on ScratchJr Connect for my Cognitive and Brain Science senior seminar class.
+  </div>
+
+</div>
+
 
 <div class="section">
 
@@ -116,18 +187,40 @@ div.profile {
 
 </div>
 
+<div class="section">
 
+  <div class="column-main">
+    <p>I became project lead in January 2020 and concluded that our team would need dedicated programmers to code a custom Wordpress theme for the site using PHP, HTML, CSS, and Javascript. Working with student interns of varied coding backgrounds, and being unfamiliar myself with the Tufts development environment, we spent the spring learning from Tufts Technology Support staff.</p>
 
-      <div>
+    <p>In parallel with this programming journey, I realized that our UI designs would need to be more specific in order to serve as references for our developers. Since Tom had left the team, I took responsibility for revising key aspects of the website, first as paper sketches and then in Figma. These in-depth sketches I created throughout May and June helped me discuss my ideas and technical challenges with both the members of my team and the lab director.</p>
+  </div>
 
-
-      <p>I became project lead in January 2020 and concluded that our team would need dedicated programmers to code a custom Wordpress theme for the site using PHP, HTML, CSS, and Javascript. Working with student interns of varied coding backgrounds, and being unfamiliar myself with the Tufts development environment, we spent the spring learning from Tufts Technology Support staff.</p>
-
-      <p>In parallel with this programming journey, I realized that our UI designs would need to be more specific in order to serve as references for our developers. Since Tom had left the team, I took responsibility for revising key aspects of the website, first as paper sketches and then in Figma. These in-depth sketches I created throughout May and June helped me discuss my ideas and technical challenges with both the members of my team and the lab director.</p>
-
-      <p>Much of development prioritized pinning down the functionality of basic features in code over fine-tuning design choices, and we continually ran into bugs due to the complex code and environment. Due to the pandemic, unexpected fatal errors, and delays in communication with support teams, our finished product's deadline was pushed back throughout 2020. We now have a finished, live version of the site that we will beta test with our target audience this month and hopefully make public this spring.</p>
-
+  <div class="column-side">
+    <center><a href="/assets/images/SJrConnect-FigmaV2.png"><img src="/assets/images/SJrConnect-FigmaV2.png" alt="Different versions of Figma mockups of Resource Thumbnail view" id="figma-v2"></a>
+    </center>
+    <div class="desc">May 2020, an example of Figma mockups that I made for team members' and supervisors' reference. (Click for full view)
     </div>
+  </div>
+
+</div>
+
+<div class="section">
+
+  <p>Much of development prioritized pinning down the functionality of basic features in code over fine-tuning design choices, and we continually ran into bugs due to the complex code and environment. Due to the pandemic, unexpected fatal errors, and delays in communication with support teams, our finished product's deadline was pushed back throughout 2020. We now have a finished, live version of the site that we will beta test with our target audience and hopefully make public in spring 2021.</p>
+
+</div>
+
+
+<div class="section">
+
+    <center><a href="/assets/images/SJrConnect-Finals1.png"><img src="/assets/images/SJrConnect-Finals1.png" alt="Screenshots of the final Home page and Submit page of ScratchJr Connect" id="finals1"></a><a href="/assets/images/SJrConnect-Finals2.png"><img src="/assets/images/SJrConnect-Finals2.png" alt="Screenshots of the final User page and Browse (Discover) page of ScratchJr Connect" id="finals2"></a>
+    </center>
+    <div class="desc">Summer 2020, screenshots of the finalized website user interface coded by me, Emil Polackiewicz, Devon Minor, and Matthew Fiedler. (Click for full view)
+    </div>
+
+</div>
+
+
 
         <div class="bumper" style="padding-top:50px;"><center>
     	<p>
