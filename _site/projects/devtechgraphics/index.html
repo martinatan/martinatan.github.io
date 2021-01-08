@@ -29,6 +29,39 @@
 				
 				<head>
 <style>
+
+#postcard1, #postcard2 {
+  width: 45%;
+}
+
+#poster1, #poster2 {
+  width: 49%;
+}
+
+@media screen and (max-width: 1080px) {
+  .column-main, .column-side {
+    width: 100%;
+  }
+
+  #list {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #postcard1, #postcard2 {
+    width: 90%;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #poster1, #poster2 {
+    width: 100%;
+  }
+}
+
+
 div.section {
   padding-bottom: 1.4em;
 }
@@ -61,35 +94,49 @@ div.profile {
 
 
 <body>
-    <div class="profile">
+  <div class="section">
+		
+    <div class="column-main">
+      <div class="img" style="padding:0px 15px 0px 15px;">
+  			<center>
+  				<a href="/assets/images/ECTPostcard-01.jpg"><img src="/assets/images/ECTPostcard-01.jpg" alt="ECT Postcard front" id="postcard1" style="padding:0px 10px 0px 10px;"></a>
+  				<a href="/assets/images/ECTPostcard-02.jpg"><img src="/assets/images/ECTPostcard-02.jpg" alt="ECT Postcard back" id="postcard2" style="padding:0px 10px 0px 10px;"></a>
+  			</center>
+  			<div class="desc">Postcard for the ECT Certificate Program (Click for full view)
+  			</div>
+      </div>
+    </div>
 
-		<div class="img" style="padding:0px 15px 0px 15px;">
-			<center>
-				<a href="/assets/images/ECTPostcard-01.jpg"><img src="/assets/images/ECTPostcard-01.jpg" alt="ECT Postcard front" width="350px" style="padding:0px 10px 0px 10px;"></a>
-				<a href="/assets/images/ECTPostcard-02.jpg"><img src="/assets/images/ECTPostcard-02.jpg" alt="ECT Postcard back" width="350px" style="padding:0px 10px 0px 10px;"></a>
-			</center>
-			<div class="desc">Postcard for the ECT Certificate Program (Click for full view)
-			</div>
-		</div>
+    <div class="column-side">
+      <p><ul id="list" style="list-style-type:none;line-height:2.0em; padding:0px 50px 0px 50px;">
+        <li><b>time range:</b>  July 2019</li>
+        <li><b>client:</b>  DevTech Research Group</li>
+        <li><b>tools:</b>  Sketch, Adobe Illustrator</li>
+        <li><b>my role:</b>  graphic designer</li>
+      </ul></p>
+    </div>
 
-    	<p><ul style="float:right;list-style-type:none;line-height:2.0em;text-align:center; padding:0px 50px 0px 50px;">
-    		<li><b>time range:</b>  July 2019</li>
-    		<li><b>client:</b>  DevTech Research Group</li>
-    		<li><b>tools:</b>  Sketch, Adobe Illustrator</li>
-    	</ul></p>
+	</div>
+
+  <div class="section">
 
     	<p class="indent">This was an exercise in re-designing a set of flyers and postcards that had been created in Microsoft Office. Not only did it involve formatting the text based on how the information should be arranged logically and hierarchically, but it also involved some synthesizing of the information so that the most pertinent details could fit into a certain amount of space on the page.
     	</p>
 
+  </div>
+
+  <div class="section">
+
 		<div class="img" style="padding:0px 15px 0px 15px;">
 			<center>
-				<a href="/assets/images/DevTechFlyer.jpeg"><img src="/assets/images/DevTechFlyer.jpeg" alt="DevTech revamp" width="350px" style="border:1px solid #E1CBD4; padding:0px 10px 0px 10px;"></a>
-				<a href="/assets/images/CertificateFlyer.jpg"><img src="/assets/images/CertificateFlyer.jpg" alt="ECT revamp" width="350px" style="border:1px solid #E1CBD4; padding:0px 10px 0px 10px;"></a>
+				<a href="/assets/images/DevTechFlyer.jpeg"><img src="/assets/images/DevTechFlyer.jpeg" alt="DevTech revamp" id="poster1" style="border:1px solid #E1CBD4; padding:0px 10px 0px 10px;"></a>
+				<a href="/assets/images/CertificateFlyer.jpg"><img src="/assets/images/CertificateFlyer.jpg" alt="ECT revamp" id="poster2" style="border:1px solid #E1CBD4; padding:0px 10px 0px 10px;"></a>
 			</center>
 			<div class="desc">Flyers for DevTech Research Group & the Early Childhood Technology Certificate Program (Click for full view)
 			</div>
 		</div>
-    </div>
+
+  </div>
 
     <div class="bumper" style="padding-top:50px;"><center>
     	<p>
