@@ -73,7 +73,7 @@ body {
 @media screen and (max-width: 700px) {
   body {
     width: 85%;
-    font-size: 125%;
+    font-size: 115%;
   }
   .column-side, .column-main {
     width:100%;
