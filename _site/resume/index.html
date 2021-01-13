@@ -2,7 +2,7 @@
 	<html lang="en">
 		<head>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>{{ page.title }}</title>
+			<title>Martina Tan - résumé</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed">
@@ -27,7 +27,37 @@
 
 				<div id="content-wrap">
 				
-				{{ content }}
+				<head>
+<style>
+
+#resume-frame {
+	width: 90%;
+	height: 700px;
+}
+
+@media screen and (max-width: 850px) {
+	#resume-frame {
+		width: 100%;
+	}
+}
+
+</style>
+</head>
+
+<div class="projects">
+    <h1 style="margin-bottom:0em;">résumé</h1>
+    <p style="padding-bottom:1.2em"><a href="assets/images/MartinaTanResume.pdf" download="MartinaTanResume">Download my résumé</a> or view it in your browser below!</p>
+
+<body>
+
+<div class="section">
+	<center>
+		<iframe src="/assets/images/MartinaTanResume.pdf#view=fit" id="resume-frame"></iframe>
+	</center>
+</div>
+
+</body>
+</div>
 				
 				</div><!-- /.container -->
 				<footer id="footer">
