@@ -1,3 +1,3 @@
-# martinatan.github.io
+# martinatan.github.io / martinatan.com
 
-This is going to be the website for Martina Laurel Tan.
+This the website for Martina Laurel Tan.
