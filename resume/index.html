@@ -6,8 +6,9 @@ title: Martina Tan - résumé
 <style>
 
 #resume-frame {
-	width: 90%;
-	height: 700px;
+	width: 100%;
+	min-height: 550px;
+	max-height: 700px;
 }
 
 @media screen and (max-width: 850px) {
@@ -19,17 +20,18 @@ title: Martina Tan - résumé
 </style>
 </head>
 
-<div class="projects">
-    <h1 style="margin-bottom:0em;">résumé</h1>
-    <p style="padding-bottom:1.2em"><a href="assets/images/MartinaTanResume.pdf" download="MartinaTanResume">Download my résumé</a> or view it in your browser below!</p>
-
 <body>
+	<div class="container">
+		<div class="color-bg">
+			<h1 style="text-align: center;"><img src="/assets/images/lace-flourish.svg" class="flourish"> résumé <img src="/assets/images/lace-flourish.svg" class="flourish"></h1>
+		</div>
+	<div class="section-container">
+		<div class="button-wrap"><a href="assets/images/MartinaTanResume.pdf" download="MartinaTanResume"><button class="button clickable" tabindex="-1">Download <span class="download-icon"></span></button></a></div>
 
-<div class="section">
-	<center>
-		<iframe src="/assets/images/MartinaTanResume.pdf#view=fit" id="resume-frame"></iframe>
-	</center>
+		<center>
+			<iframe src="/assets/images/MartinaTanResume.pdf#view=fit" id="resume-frame"></iframe>
+		</center>
+	</div>
 </div>
 
 </body>
-</div>

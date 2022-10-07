@@ -2,65 +2,170 @@
 	<html lang="en">
 		<head>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Martina Tan, artist & designer</title>
+			<title>Martina Tan, product designer</title>
 			<!-- link to main stylesheet -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:wght@600;800&display=swap">
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:bold">
+
+			<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 		</head>
-
-
 
 		<body>
 			<div id="page-container">
 				<header class="page-header">
-					<nav>
-			    		<ul>
-			        		<li><a href="/">intro</a></li>
-				        	<li><a href="/process">process</a></li>
-			        		<li><a href="/projects">projects</a></li>
-			        		<li><a href="/contact">contact</a></li>
-			        		<li><a href="/resume">résumé</a></li>
-			    		</ul>
-					</nav>
+					<div class="nav-subcontainer">
+						<nav>
+							<div class="nav-logo">
+								<a href="/">
+									<img id="nav-logo" src="/assets/images/mahjong_icon.svg"
+									alt="'M' logo in the style of a mahjong tile"/>
+									<span id="nav-logo-name">Martina Tan</span>
+								</a>
+							</div>
+						
+							<ul class="nav-links">
+									<li><a href="/#work">work</a></li>
+									<li><a href="/about">about</a></li>
+									<li><a href="/resume">résumé</a></li>
+							</ul>
+
+							<div class="nav-hamburger" tab-index=0 aria-label="Toggle the menu"> <!-- fix a11y :( -->
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</div>
+						</nav>
+					</div>
+
 				</header>
 
 				<div id="content-wrap">
 				
-				<div class="blurb">
-	<h1>
-	Hi! I’m Martina Tan, a designer and artist based in Boston, Massachusetts.
-    </h1>
+				<!-- future to-do: loop to dynamically populate work content-->
+
 <body>
-	<div class="row">
-
-		<div class="column-side">
-			<center>
-			<img src="/assets/images/propic2020.png" class="responsive">
-			</center>
+	<div class="container">
+		<div class="color-bg">
+			<div class="section-container grid">
+				<div id="landing-text">
+					<h1><img src="/assets/images/lace-flourish.svg" class="flourish"></img> Hi, I'm Martina! <img src="/assets/images/lace-flourish.svg" class="flourish"></img></h1>
+					<p>I’m an <strong>end-to-end designer</strong> who thrives at the intersection of product strategy, storytelling, and social impact.</p>
+					<p>I recently received my <strong>Master of Human-Computer Interaction</strong> at Carnegie Mellon.</p>
+					<div class="button-wrap"><a href="/about"><button class="button clickable">learn more about me <span class="arrow-right"></span></button></a></div>
+				</div>
+			</div>
 		</div>
-		<div class="column-main">
-			<p>I'm from Mount Laurel, New Jersey, but I currently split my time between <a href="https://www.tufts.edu">Tufts</a> and the <a href="https://smfa.tufts.edu/">School of the Museum of Fine Arts</a> as a fifth-year <a href="https://admissions.tufts.edu/academics/school-of-the-museum-of-fine-arts-at-tufts/combined-degree-with-the-schoo/">Combined Degree</a> student. In 2021, I’ll be graduating with two degrees in <b>Cognitive and Brain Science</b> and <b>Interdisciplinary Studio Art</b>, plus a <b>Computer Science</b> minor.</p>
 
-		  	<p>Design and art have been my most persistent passions since elementary school, when I would jump at any chance to meticulously sketch and hand-write all of my project posters. I still love all manners of creating by hand, but I've also expanded my toolbox into the digital realms of programming and prototyping. I hope to have a career in Human-Computer Interaction or UX Design while maintaining a steady art practice.</p>
 
-		  	<p> I find joy in collaborating with people of diverse backgrounds throughout my design process, with the goal of achieving solutions that are inclusive, audience-conscious and accessible.</p>
+		<div class="section-container grid" id="work">
+			<h2 class="section-title">selected work <img src="/assets/images/lace-flourish.svg" class="flourish"></img></h2>
 
-		  	<p>When I'm not sketching, I'm usually <a href="/projects/senior-thesis">thinking about tree bark</a>, scrolling on Tumblr, or consuming speculative fiction/fantasy stories. I use she/her pronouns.</p>
+			<div class="work-preview flex" id="fame">
+				<div class="preview-img flex-col-50 clickable">
+					<a href="https://fame-x-cmu.webflow.io/">
+						<figure class="thumbnail">
+							<img src="/assets/images/fame-thumbnail.png" alt="A photo of Martina in a black dress with bright green floral patterns, holding a small pickle and smiling" />
+						</figure>
+					</a>
+				</div>
+				<div class="preview-text flex-col-50">
+					<h4>DEI Explorer</h4>
+					<h3>Crowdsourcing educator critique to effect change in Diversity, Equity, and Inclusion policy</h3>
+					<h5>product management / service design / web UX design</h5>
+					<div class="button-wrap"><a href="https://fame-x-cmu.webflow.io/"><button class="button clickable">view project <span class="arrow-right"></span></button></a></div>
+				</div>
+			</div>
 
-		  	<p><a href="/resume">View my résumé</a>, and check out the links above to learn more about me through my work! 
-			</p>
+			<div class="work-preview flex" id="scratchjr">
+				<div class="preview-img flex-col-50">
+					<figure class="thumbnail">
+						<img src="/assets/images/sjr-thumbnail.png" alt="A photo of Martina in a black dress with bright green floral patterns, holding a small pickle and smiling" />
+					</figure>
+				</div>
+				<div class="preview-text flex-col-50">
+					<h4>ScratchJr Connect</h4>
+					<h3>Compiling curated learning activities for parents and educators</h3>
+					<h5>project management / web development / UI design</h5>
+					<div class="button-wrap"><a><button class="button">coming soon</button></a></div>
+				</div>
+			</div>
+
+			<div class="work-preview flex" id="project-your-future">
+				<div class="preview-img flex-col-50">
+					<figure class="thumbnail">
+						<img src="/assets/images/cmnh-thumbnail3.png" alt="A photo of Martina in a black dress with bright green floral patterns, holding a small pickle and smiling" />
+					</figure>
+				</div>
+				<div class="preview-text flex-col-50">
+					<h4>Project Your Future</h4>
+					<h3>Teaching museum visitors to reflect on their role in Earth’s climate future</h3>
+					<h5>UX research /  interactive exhibition design</h5>
+					<div class="button-wrap"><a><button class="button">coming soon</button></a></div>
+				</div>
+			</div>
+
+			<div class="work-preview flex" id="pennmac">
+				<div class="preview-img flex-col-50">
+					<figure class="thumbnail">
+						<img src="/assets/images/pennmac-thumbnail1.png" alt="A photo of Martina in a black dress with bright green floral patterns, holding a small pickle and smiling" />
+					</figure>
+				</div>
+				<div class="preview-text flex-col-50">
+					<h4>Nonna's Secret Recipes</h4>
+					<h3>Engaging shoppers with authentic Italian cuisine through community member expertise</h3>
+					<h5>service design / UX research / video production</h5>
+					<div class="button-wrap"><a><button class="button">coming soon</button></a></div>
+				</div>
+			</div>
+
+
+			<div class="work-preview flex" id="misc">
+				<div class="preview-img flex-col-50 clickable">
+					<a href="/other">
+						<figure class="thumbnail">
+							<img src="/assets/images/other-thumbnail.png" alt="A photo of Martina in a black dress with bright green floral patterns, holding a small pickle and smiling" />
+						</figure>
+					</a>
+				</div>
+				<div class="preview-text flex-col-50">
+					<h4>Other</h4>
+					<h3>My site is a work in progress. Check out other things I've made in the meantime!</h3>
+					<h5>visual design / industrial design / studio art</h5>
+					<div class="button-wrap"><a href="/other"><button class="button clickable">go to gallery <span class="arrow-right"></span></button></a></div>
+				</div>
+			</div>
 		</div>
 	</div>
-
 </body>
-
-</div>
 				
 				</div><!-- /.container -->
-				<footer id="footer">
-		    		© 2021 Martina Laurel Tan
+				<footer id="page-footer">
+					<div class="footer-wrap">
+							<div class="footer-section footer-contact">
+								<h2>Happy to link up to talk about design, product, and more!</h2>
+								<ul>
+									<li><a href="mailto:mltan368@gmail.com" target="_blank"><img src="/assets/images/footer-email.svg"/></a></li>
+									<li><a href="https://linkedin.com/in/martina-tan" target="_blank"><img src="/assets/images/footer-linkedin.svg"/></a></li>
+									<li><a href="https://www.instagram.com/m.art.ina.tan/" target="_blank"><img src="/assets/images/footer-insta.svg"/></a></li>
+								</ul>
+							</div>
+							<div class="footer-nav">
+								<div class="footer-signed">
+									<p>© 2022 Martina Laurel Tan</p>
+								</div>
+								<ul class="footer-links"> <!-- use nav-links class  -->
+									<li><a href="/work">work</a></li>
+									<li><a href="/about">about</a></li>
+									<li><a href="/resume">résumé</a></li>
+								</ul>	
+							</div>
+					</div>
 				</footer>
 			</div>
+		<script src="/assets/scripts/hamburger.js"></script>
+		<script src="/assets/scripts/main.js"></script>
 		</body>
 	</html>
