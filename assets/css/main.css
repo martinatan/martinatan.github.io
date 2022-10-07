@@ -954,6 +954,14 @@ ICONS STYLING
   background-size: contain;
 }
 
+.external-link {
+  background: url(/assets/images/icon-external.svg) no-repeat;
+  width: 15px;
+  height: 15px;
+  margin-left: 6px;
+  background-size: contain;
+}
+
 .flourish {
   background: url(/assets/images/lace-flourish.svg) no-repeat;
   width: 30px;
