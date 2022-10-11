@@ -740,9 +740,8 @@ GENERAL CASE STUDY STYLING
 
 .banner {
   height: 450px;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 .section-container {
