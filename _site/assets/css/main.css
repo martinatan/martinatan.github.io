@@ -591,6 +591,10 @@ nav a, footer a, h1 a, .button-wrap a{
   text-decoration: none;
 }
 
+h1 a:hover{
+  text-decoration: underline;
+}
+
 a {
   /* text-decoration: none; */
   color: #A83B64;
@@ -740,8 +744,9 @@ GENERAL CASE STUDY STYLING
 
 .banner {
   height: 450px;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .section-container {
@@ -750,7 +755,6 @@ GENERAL CASE STUDY STYLING
 }
 
 .layer {
-  background-color: rgba(220, 164, 83, 0.2);
   top: 0;
   left: 0;
   width: 100%;
@@ -806,7 +810,7 @@ h4 {
   grid-column: 2 / 6;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #title > * {
     grid-column: 1 / 7;
   }
@@ -832,8 +836,21 @@ h4 {
 /********************
 dei-explorer STYLING
 *********************/
+.banner-dei-explorer {
+  background-image: url(/assets/images/dei-explorer-banner.png);
+  background-size: contain;
+  background-position: left top;
+}
 
+.banner-dei-explorer .layer {
+  background-color: rgba(86, 86, 147, 0.2);
+}
 
+@media screen and (max-width: 1300px) {
+  .banner-dei-explorer {
+    background-size: cover;
+  }
+}
 
 /********************
 scratchjr-connect STYLING
@@ -842,12 +859,55 @@ scratchjr-connect STYLING
   background-image: url(/assets/images/SJrConnect-FigmaV2.png);
 }
 
+.banner-scratchjr .layer {
+  background-color: rgba(220, 164, 83, 0.2);
+}
+
+@media screen and (max-width: 1300px) {
+  .banner-scratchjr {
+    background-size: cover;
+  }
+}
+
+/********************
+project-your-future STYLING
+*********************/
+.banner-cmnh {
+  background-image: url(/assets/images/cmnh-banner.png);
+  background-position: right center;
+}
+
+.banner-cmnh .layer {
+  background-color: rgba(88, 101, 134, 0.3);
+  ;
+}
+
+#pdf-frame {
+  grid-column: 1 / 7;
+  grid-row: 3 / 4;
+  width: 100%;
+  min-height: 80vh;
+  max-height: 90vh;
+}
+
+@media screen and (max-width: 850px) {
+  #pdf-frame {
+      width: 100%;
+  }
+}
+
+
 /********************
 nonnas-secret-recipes STYLING
 *********************/
+.banner-pennmac {
+  background-image: url(/assets/images/SJrConnect-FigmaV2.png);
+}
 
 
-
+.banner-pennmac .layer {
+  background-color: rgba(220, 164, 83, 0.2);
+}
 
 /********************
 LANDING PAGE STYLING
