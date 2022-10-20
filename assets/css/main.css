@@ -454,6 +454,27 @@ Grid Layout & Containers
   gap: 40px;
 }
 
+@media screen and (max-width: 1000px) {
+  .case-study .flex {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .case-study .flex {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .case-study .flex {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
 /* responsive two-column on about page */
 #recent-activities .flex {
   margin-bottom: 36px;
@@ -470,6 +491,7 @@ Grid Layout & Containers
   }
 }
 
+/* Gallery for Other Work */
 /* .gallery {
   background-color: yellow;
   grid-column: auto / span 2;
@@ -490,17 +512,66 @@ Grid Layout & Containers
   padding: 70px 0px;
 }
 
-/* additional tweaking */
+/* additional tweaking for containers */
 .section-container h2 {
   padding: 50px 0px 0px 0px;
 }
 
-#graphic-design div {
+/* #graphic-design div {
   grid-column: 1 /7;
 }
 
 #graphic-design img {
   width: 100%;
+} */
+
+/* Callout containers */
+.callout-container {
+  background-color: #F3E6EC;
+  border-radius: 16px;
+  border: 1px solid #A83B64;
+  margin: 30px auto;
+  padding: 30px 30px;
+
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+
+.callout-container .icon {
+  margin: auto 0px;
+  min-width: 30px;
+}
+
+.callout-container h6 {
+  align-self: center;
+}
+
+.callout-container p {
+  margin: 0px 0px;
+}
+
+.callout-column {
+  flex-direction: column;
+  gap: 0px;
+}
+
+/* .aha-moment h6 {
+  display: flex;
+  align-items: center;
+}
+
+.aha-moment .icon {
+  /* height: 22px;
+  width: 22px; */
+
+
+/****
+Separator (Horizontal Rule) Styling
+*****/
+hr {
+  border: 1px solid #E1CBD4;
+  margin: 0px 10vh;
 }
 
 /********************
@@ -511,16 +582,22 @@ figure {
   display: inline-flex;
   border-radius: 32px;
   border: 1px solid #7F5063;
-  margin: 15px 0px;
+  margin: 15px auto;
   overflow:hidden;
 
   transition: box-shadow ease-in-out 200ms,
     transform ease-in-out 200ms;
 }
 
+.no-border figure {
+  border-radius: 0px;
+  border: none;
+}
+
 @media screen and (max-width: 700px) {
   figure {
     margin: 15px 0px;
+    border-radius: 16px;
   }
 }
 
@@ -540,6 +617,48 @@ figure {
 }
 
 /********************
+TABLE STYLING
+*********************/
+
+.table-two-col {
+  grid-column: 2 / 6;
+}
+
+@media screen and (max-width: 700px) {
+  .table-two-col {
+    grid-column: 1 / 7;
+  }
+}
+
+table {
+  border: 1px solid #491327;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #491327;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+th {
+  font-family: 'Barlow', 'Helvetica', 'Arial', 'Sans-Serif';
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 32px;
+  color: #fff;
+  background-color: #7F5063;
+}
+
+td {
+  font-family: 'Barlow', 'Helvetica', 'Arial', 'Sans-Serif';
+  font-size: 20px;
+  line-height: 32px;
+  color: #491327;
+}
+
+
+/********************
 TEXT STYLING
 *********************/
 
@@ -551,7 +670,7 @@ h1 {
 }
 h2 {
     font-size: 34px;
-    line-height: 38px;
+    line-height: 42px;
     font-family: 'manropeextrabold', 'Garamond', 'Serif';
     color: #701E3D;
     margin-bottom: 50px;
@@ -580,7 +699,17 @@ h5 {
   margin: 16px 0px;
 }
 
-p, ul li {
+h6 {
+  font-family: 'Barlow', 'Helvetica', 'Arial', 'Sans-Serif';
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #491327;
+  margin: 8px 0px;
+}
+
+p, ul li, ol li {
     font-family: 'Barlow', 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 20px;
     line-height: 32px;
@@ -607,12 +736,18 @@ figcaption {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /********************
 TEXT STYLING - SCALE DOWN FOR MOBILE
 *********************/
 @media screen and (max-width: 700px) {
+  th, td {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   h1 {
     font-size: 28px;
     line-height: 36px;
@@ -1191,6 +1326,13 @@ ICONS STYLING
   height: 24px;
   margin-right: 6px;
   background-size: contain;
+}
+
+.icon-lightbulb {
+  background: url(/assets/images/icon-bulb.svg) no-repeat;
+  width: 26px;
+  height: 26px;
+  background-size: contain; 
 }
 
 
