@@ -179,6 +179,53 @@ nav {
   transition: all 0.3s ease;
 }
 
+
+.sub-menu {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 15px;
+  padding-left: 0px;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sub-menu li {
+  font-family: 'Barlow', 'Helvetica', 'Arial', 'Sans-Serif';
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sub-menu li a {
+  color: #A83B64;
+  margin: 0 0.2vw;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all ease-in-out 350ms;
+}
+
+.sub-menu li a:hover {
+  color: #491327;
+}
+
+@media screen and (max-width: 500px) {
+  .sub-menu {
+    flex-direction: column;
+  }
+
+  .sub-menu li {
+    text-align: center;
+  }
+
+  .sub-menu li a {
+    margin: 0px;
+    padding: 10px 0px;  
+  }
+}
+
 /********************
 CONTENT WRAPPER STYLING
 *********************/
@@ -418,7 +465,7 @@ Responsive styling for header, footer, and content-wrap
 }
 
 /********************
-Grid Layout & Containers
+Grid/Flex Layout & Containers
 *********************/
 
 /* every child in this div is an element of the grid */
@@ -454,6 +501,23 @@ Grid Layout & Containers
   gap: 40px;
 }
 
+/* ensure 50-50 column sizing */
+.flex-col-50 {
+  flex-basis: 0;
+  flex: 1 1 0px;
+}
+
+.flex-col-33 {
+  flex-basis: 0;
+  flex: 1 1 0px;
+}
+
+@media screen and (max-width: 700px) {
+  #other-work .flex {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .case-study .flex {
     flex-direction: column;
@@ -475,21 +539,7 @@ Grid Layout & Containers
   }
 }
 
-/* responsive two-column on about page */
-#recent-activities .flex {
-  margin-bottom: 36px;
-}
 
-#recent-activities h3, ul {
-  margin: 10px 0px;
-}
-
-@media screen and (max-width: 700px) {
-  #recent-activities .flex {
-    flex-direction: column;
-    gap: 0px;
-  }
-}
 
 /* Gallery for Other Work */
 /* .gallery {
@@ -515,6 +565,12 @@ Grid Layout & Containers
 /* additional tweaking for containers */
 .section-container h2 {
   padding: 50px 0px 0px 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .section-container h2 {
+    padding: 25px 0px 0px 0px;
+  }
 }
 
 /* #graphic-design div {
@@ -554,24 +610,6 @@ Grid Layout & Containers
 .callout-column {
   flex-direction: column;
   gap: 0px;
-}
-
-/* .aha-moment h6 {
-  display: flex;
-  align-items: center;
-}
-
-.aha-moment .icon {
-  /* height: 22px;
-  width: 22px; */
-
-
-/****
-Separator (Horizontal Rule) Styling
-*****/
-hr {
-  border: 1px solid #E1CBD4;
-  margin: 0px 10vh;
 }
 
 /********************
@@ -805,18 +843,18 @@ TEXT STYLING - SCALE DOWN FOR MOBILE
 }
 
 /* TO-DO: Reassess if this is needed or a11y friendly */
-p.blurb {
+/* p.blurb {
     font-size:1.7em;
     font-weight:bold;
     padding-bottom:0.2em;
     text-align:left;
-}
+} */
 
 /* TO-DO: Also check on this, it's a weird workaround for text layout */
-p.indent {
+/* p.indent {
     text-indent:35px;
     text-align:left;
-}
+} */
 
 /* TO-DO: Check where this comes up */
 ul.posts { 
@@ -965,9 +1003,6 @@ h4 {
   }
 }
 
-
-
-
 /********************
 dei-explorer STYLING
 *********************/
@@ -1090,7 +1125,6 @@ LANDING PAGE STYLING
   align-items: center;
 }
 
-
 .what-else-section {
   grid-column: 1 / 7;
   display: flex;
@@ -1110,12 +1144,6 @@ LANDING PAGE STYLING
     flex-direction: column;
     gap: 15px; 
   }
-}
-
-/* ensure 50-50 column sizing */
-.flex-col-50 {
-  flex-basis: 0;
-  flex: 1 1 0px;
 }
 
 .preview-text, .what-else-text {
@@ -1236,6 +1264,47 @@ ABOUT PAGE STYLING
   }
 }
 
+/* responsive two-column on about page */
+#recent-activities .flex {
+  margin-bottom: 36px;
+}
+
+#recent-activities h3, ul {
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 700px) {
+  #recent-activities .flex {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+/********************
+OTHER WORK PAGE STYLING
+*********************/
+#other-work .subsection {
+  margin-bottom: 50px;
+}
+
+.col-66-right {
+  grid-column: 3 / 7;
+}
+
+.col-33-left {
+  grid-column: 1 / 3;
+}
+
+@media screen and (max-width: 1100px) {
+
+  .col-66-right {
+    grid-column: 1 / 7;
+  }
+  
+  .col-33-left {
+    grid-column: 1 / 7;
+  }
+}
 
 /********************
 UNSORTED/WP
