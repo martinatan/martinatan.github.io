@@ -1079,6 +1079,19 @@ nonnas-secret-recipes STYLING
   background-color: rgba(220, 164, 83, 0.2);
 }
 
+
+/********************
+spin-dashboard STYLING
+*********************/
+.banner-spin {
+  background-image: url(/assets/images/SpinDashboardCover.png);
+}
+
+
+.banner-spin .layer {
+  background-color: rgba(255, 84, 54, 0.2);
+}
+
 /********************
 LANDING PAGE STYLING
 *********************/
