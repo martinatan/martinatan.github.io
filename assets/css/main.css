@@ -931,6 +931,12 @@ GENERAL CASE STUDY STYLING
   background-position: center center;
 }
 
+@media screen and (max-width: 1300px) {
+  .banner {
+    background-attachment: scroll;
+  }
+}
+
 .section-container {
   padding: 50px 0px;
 
@@ -1017,18 +1023,12 @@ dei-explorer STYLING
 *********************/
 .banner-dei-explorer {
   background-image: url(/assets/images/dei-explorer-banner.png);
-  background-size: contain;
+  /* background-size: contain;*/
   background-position: left top;
 }
 
 .banner-dei-explorer .layer {
   background-color: rgba(86, 86, 147, 0.2);
-}
-
-@media screen and (max-width: 1300px) {
-  .banner-dei-explorer {
-    background-size: cover;
-  }
 }
 
 /********************
@@ -1042,12 +1042,6 @@ scratchjr-connect STYLING
   background-color: rgba(220, 164, 83, 0.2);
 }
 
-@media screen and (max-width: 1300px) {
-  .banner-scratchjr {
-    background-size: cover;
-  }
-}
-
 /********************
 project-your-future STYLING
 *********************/
@@ -1058,7 +1052,6 @@ project-your-future STYLING
 
 .banner-cmnh .layer {
   background-color: rgba(88, 101, 134, 0.3);
-  ;
 }
 
 #pdf-frame {
@@ -1110,7 +1103,7 @@ tems-shift-tracker STYLING
 
 
 .banner-tems .layer {
-  background-color: rgba(55, 136, 194, 0.2);
+  background-color: rgba(74, 59, 56, 0.2);
 }
 
 /********************
