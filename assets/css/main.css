@@ -831,7 +831,7 @@ TEXT STYLING - SCALE DOWN FOR MOBILE
     line-height: 20px;
   }
 
-  p {
+  p, ul li, ol li {
     font-size: 18px;
     line-height: 28px;
   }
