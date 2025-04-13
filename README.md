@@ -4,6 +4,6 @@ This the website for Martina Laurel Tan.
 
 To-do:
 
-# Clean old pages
-
-# Generate site map for accessibility
+- Clean old pages
+- Generate site map for accessibility
+- Plan accessibility audit for funsies
